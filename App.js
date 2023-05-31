@@ -3,16 +3,11 @@ import { StyleSheet, Button, View } from "react-native";
 import { openBrowserAsync } from "expo-web-browser";
 
 export default function App() {
+  const url =
+    "https://beta.mercadopago.com.ar/checkout/v1/beta9/redirect/sniffing?preference-id=239658604-61d81820-4089-4ef1-9824-8bab1817669b&device-override=mobile&deeplink=true";
   return (
     <View style={styles.container}>
-      <Button
-        title="Open Browser"
-        onPress={() =>
-          openBrowserAsync(
-            "https://beta.mercadopago.com.ar/checkout/v1/beta9/redirect?preference-id=239658604-6a98fa75-e786-48ea-9e55-3e3e018498c7&device-override=mobile"
-          )
-        }
-      />
+      <Button title="Open Browser" onPress={() => openBrowserAsync(url)} />
       <StatusBar style="auto" />
     </View>
   );
