@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Page() {
@@ -5,7 +6,13 @@ export default function Page() {
     <View style={styles.container}>
       <View style={styles.main}>
         <Text style={styles.title}>Hello World</Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
+
+        <Link style={styles.link} href={"/customtabs"}>
+          Custom Tabs / SFVC
+        </Link>
+        <Link style={styles.link} href={"/checkout/congrats"}>
+          Congrats
+        </Link>
       </View>
     </View>
   );
@@ -30,5 +37,9 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 36,
     color: "#38434D",
+  },
+  link: {
+    fontSize: 32,
+    color: "#0000FF",
   },
 });

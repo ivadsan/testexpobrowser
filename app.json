@@ -14,7 +14,8 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "associatedDomains": ["applinks:expo.dev"]
     },
     "android": {
       "adaptiveIcon": {
@@ -26,8 +27,8 @@
           "action": "VIEW",
           "data": [
             {
-              "scheme": "yourapp",
-              "host": "beta.mercadopago.com.ar/checkout",
+              "scheme": "myapp",
+              "host": "checkout",
               "pathPrefix": "/congrats"
             }
           ],
