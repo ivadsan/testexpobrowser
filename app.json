@@ -12,10 +12,15 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "associatedDomains": ["applinks:expo.dev"]
+      "associatedDomains": [
+        "applinks:expo.dev"
+      ],
+      "bundleIdentifier": "com.test.TestExpoBrowser"
     },
     "android": {
       "adaptiveIcon": {
@@ -32,9 +37,13 @@
               "pathPrefix": "/congrats"
             }
           ],
-          "category": ["BROWSABLE", "DEFAULT"]
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
         }
-      ]
+      ],
+      "package": "com.test.TestExpoBrowser"
     },
     "web": {
       "favicon": "./assets/favicon.png",
